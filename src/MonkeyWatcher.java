@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class MonkeyWatcher {
 
 	private int numRounds = 0;
