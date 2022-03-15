@@ -12,17 +12,18 @@
   * [Task 6: Debug StringOps isValidHTML method](#task-6-debug-stringops-isvalidhtml-method)
     + [StringOpsTest Lessons](#stringopstest-lessons)
   * [Submission](#submission)
+  * [Resources](#resources)
 - [Extra Credit](#extra-credit)
   * [Description](#description-1)
   * [What to do](#what-to-do-1)
   * [Extra Credit Submission](#extra-credit-submission)
 
 # CS 1632 - Software Quality Assurance
-Fall Semester 2021 - Supplementary Exercise 3
+Spring Semester 2022 - Supplementary Exercise 3
 
-* DUE: Oct 29 (Friday), 2021 11:59 PM 
+* DUE: Mar 18 (Friday), 2022 11:59 PM 
 
-**GitHub Classroom Link:** https://classroom.github.com/a/RJUac-Ac
+**GitHub Classroom Link:** TBD
 
 ## Description
 
@@ -244,7 +245,7 @@ for a particular equivalence class.
 
 For byte streams, equivalence classes cannot be simply described using a
 "range" like numbers.  For byte streams, equivalence classes are things
-like a string with less 10 characters, a string in all-caps, a string in
+like a string with less than 10 characters, a string in all-caps, a string in
 proper XML format, etc.  These cannot be expressed using the @InRange
 annotation.  So we need to create a specialized random value generator for
 each equivalence class.  Otherwise, there is fat chance that you will hit
@@ -406,11 +407,19 @@ ValidHTMLStringGenerator classes against the original IntegerOps and StringOps
 classes.  Since we are testing against the original classes before debugging,
 we expect all tests to fail, if you have done the work.
 
+## Resources
+
+* Constraining generated values using @InRange and other annotations:  
+https://pholser.github.io/junit-quickcheck/site/1.0/usage/constraining.html#
+
+* Generating complex values such as strings:  
+https://pholser.github.io/junit-quickcheck/site/1.0/usage/complex-types.html
+
 # Extra Credit
 
-* DUE: Nov 8 (Monday), 2021 09:30 AM
+* DUE: Mar 29 (Tuesday), 2022 01:00 PM
 
-**GitHub Classroom Link:** https://classroom.github.com/a/PCnHnRxs
+**GitHub Classroom Link:** TBD
 
 This extra credit is worth 1 point out of 100 points for the entire course.
 Note that you need to get 100/100 on the autograder to get credit.  Partial

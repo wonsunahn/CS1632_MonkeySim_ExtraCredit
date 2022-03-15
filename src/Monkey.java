@@ -25,7 +25,7 @@ public class Monkey {
 	 */
 
 	public int getId() throws NoIdException {
-		if (id == -1) {
+		if (id < 0) {
 			throw new NoIdException();
 		} else {
 			return id;
