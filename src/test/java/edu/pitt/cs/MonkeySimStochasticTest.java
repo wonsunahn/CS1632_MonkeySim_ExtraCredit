@@ -1,3 +1,5 @@
+package edu.pitt.cs;
+
 import com.pholser.junit.quickcheck.Property;
 import com.pholser.junit.quickcheck.generator.*;
 import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;

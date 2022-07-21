@@ -1,3 +1,5 @@
+package edu.pitt.cs;
+
 public class MonkeyWatcher {
 
 	private int numRounds = 0;

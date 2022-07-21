@@ -1,3 +1,5 @@
+package edu.pitt.cs;
+
 public class Monkey {
 
 	private static int monkeyNum = 0;
