@@ -1,6 +1,6 @@
 # Extra Credit
 
-* DUE: March 21 (Tuesday), 2023 before start of class
+* DUE: August 8 (Tuesday), 2023 11:30 AM
 
 **GitHub Classroom Link:** TBD
 
