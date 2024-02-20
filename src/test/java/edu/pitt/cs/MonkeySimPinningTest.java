@@ -43,7 +43,7 @@ public class MonkeySimPinningTest {
 	}
 	
 	@Test
-	public void testMain5() throws InfiniteLoopException {
+	public void testMain5() throws InfiniteLoopException, NoIdException {
 		MonkeySim.main(new String[] { Integer.toString(5) });
 
 		String nl = System.getProperty("line.separator");
