@@ -64,8 +64,29 @@ Javadoc comments.
 
 You will have to:
 
-1. Optimize MonkeySim with the help of VisualVM, while making sure
-   MonkeySimPinningTest continues to pass.
+1. Create a memory profile after you do all the Exercise 4 optimizations, but
+   before you do any optimizations to reduce memory consumption.  First, insert
+the 30 second sleep at the beginning of the main method like you did for
+Exercise 4 to make profiling easier.  Then launch the application using the followng commandline:
+
+   ```
+   java -cp target/classes edu.pitt.cs.MonkeySim 1000000
+   ```
+
+   On VisualVM, open the running application.  Go to the Profiler tab as in
+Exercise 4, then click on the "Memory settings" beside "CPU settings".  Then
+edit the Profile classes to be "edu.pitt.cs.\*\*" as before.  Then click on the
+"Memory" button beside the "CPU" button to start profiling memory objects.
+When the execution is dne, create a snapshot.  From the snapshot, click on the
+"Save" icon, and chood "Export Objects", then save in PNG format.  Name the
+file "memory-before.png".  You should see 1,000,001 Monkey objects created.
+
+1. Optimize MonkeySim to reduce the number of Monkey objects created, while
+   making sure MonkeySimPinningTest continues to pass.
+
+1. Create a second memory profile "memory-after.png" using the same steps as
+   above.  The new profile should show a much smaller number of Monkeys
+created.
 
 1. Modify MonkeySim so that it detects infinite loops and throws the
    InfiniteLoopException when it does, again making sure
@@ -106,6 +127,9 @@ defect), should fail.
 
 ## Extra Credit Submission
 
-Modify your GitHub classroom repository to perform the above stochastic
-test.  Please submit the repository to a separate **Supplementary Exercise 2
-Extra Credit** link.
+1. Fill in ReportTemplate.docx with the "memory-before.png" and
+   "memory-after.png" files generated above and exort to ReportTemplate.pdf.
+
+1. Commit and push all your code and your report to your GitHub classroom repository.
+
+1. Submit the repository to the **Supplementary Exercise 2 Extra Credit** link.
