@@ -6,13 +6,13 @@ public class MonkeySim {
 
 	public static boolean verbose = true;
 	public static final int HEADER = 50000;
-	
+
 	private List<Monkey> ml;
 	private MonkeyWatcher mw;
-	
+
 	MonkeySim(int startingMonkey) {
 		ml = new LinkedList<Monkey>();
-		mw = new MonkeyWatcher();	
+		mw = new MonkeyWatcher();
 		for (int j = 0; j < startingMonkey + 1; j++) {
 			ml.add(new Monkey());
 		}
@@ -97,22 +97,17 @@ public class MonkeySim {
 	 * @return String string version of round
 	 */
 
-	public String stringifyResults(int c, Monkey m, Monkey m2) {
+	public String stringifyResults(int c, Monkey m, Monkey m2) throws NoIdException {
 		String toReturn = new String("");
-		try {
-			for (int j = 0; j < HEADER; j++) {
-				toReturn += "@";
-			}
-			toReturn += new String("//Round ");
-			toReturn += new String("" + c);
-			toReturn += new String(": Threw banana from Monkey (#");
-			toReturn += new String(m.getMonkeyNum() + " / ID " + m.getId());
-			toReturn += new String(") to Monkey (#");
-			toReturn += new String(m2.getMonkeyNum() + " / ID " + m2.getId() + ")");
-		} catch (NoIdException noidex) {
-			System.out.println("INVALID MONKEY!");
-			System.exit(2);
+		for (int j = 0; j < HEADER; j++) {
+			toReturn += "@";
 		}
+		toReturn += new String("//Round ");
+		toReturn += new String("" + c);
+		toReturn += new String(": Threw banana from Monkey (#");
+		toReturn += new String(m.getMonkeyNum() + " / ID " + m.getId());
+		toReturn += new String(") to Monkey (#");
+		toReturn += new String(m2.getMonkeyNum() + " / ID " + m2.getId() + ")");
 		return toReturn.substring(HEADER);
 	}
 
@@ -165,7 +160,7 @@ public class MonkeySim {
 	 * @return int number of rounds taken to get to first monkey
 	 */
 
-	public int runSimulation() {
+	public int runSimulation() throws NoIdException {
 		int nextMonkey = -1;
 
 		while (!getFirstMonkey().hasBanana()) {
@@ -193,10 +188,10 @@ public class MonkeySim {
 	 * @param args - Array of arguments from cmd line
 	 */
 
-	public static void main(String[] args) throws InfiniteLoopException {
+	public static void main(String[] args) throws InfiniteLoopException, NoIdException {
 		int s = getStartingMonkeyNum(args);
 		MonkeySim monkeySim = new MonkeySim(s);
-		
+
 		int numRounds = monkeySim.runSimulation();
 		System.out.println("Completed in " + numRounds + " rounds.");
 	}
