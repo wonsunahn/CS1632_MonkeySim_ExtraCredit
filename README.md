@@ -1,6 +1,7 @@
 # Extra Credit
 
 * DUE: TBD
+  
 **GitHub Classroom Link:** TBD
 
 This extra credit is worth 1 point out of 100 points for the entire course.
