@@ -1,7 +1,7 @@
 # Extra Credit
 
-* DUE: TBD
-  
+* DUE: November 4 (Monday), 2024 before start of class
+
 **GitHub Classroom Link:** TBD
 
 This extra credit is worth 1 point out of 100 points for the entire course.
