@@ -1,6 +1,6 @@
 # Extra Credit
 
-* DUE: March 25 (Tuesday), 2025 before start of class
+* DUE: August 6 (Wednesday), 2025 8:30 AM
 
 **GitHub Classroom Link:** TBD
 
@@ -67,7 +67,7 @@ You will have to:
 1. Create a memory profile after you do all the Exercise 4 optimizations, but
    before you do any optimizations to reduce memory consumption.  First, insert
 the 30 second sleep at the beginning of the main method like you did for
-Exercise 4 to make profiling easier.  Then launch the application using the followng commandline:
+Exercise 4 to make profiling easier.  Then launch the application using the following commandline:
 
    ```
    java -cp target/classes edu.pitt.cs.MonkeySim 1000000
@@ -77,8 +77,8 @@ Exercise 4 to make profiling easier.  Then launch the application using the foll
 Exercise 4, then click on the "Memory settings" beside "CPU settings".  Then
 edit the Profile classes to be "edu.pitt.cs.\*\*" as before.  Then click on the
 "Memory" button beside the "CPU" button to start profiling memory objects.
-When the execution is dne, create a snapshot.  From the snapshot, click on the
-"Save" icon, and chood "Export Objects", then save in PNG format.  Name the
+When the execution is done, create a snapshot.  From the snapshot, click on the
+"Save" icon, and choose "Export Objects", then save in PNG format.  Name the
 file "memory-before.png".  You should see 1,000,001 Monkey objects created.
 
 1. Optimize MonkeySim to reduce the number of Monkey objects created, while
@@ -128,7 +128,7 @@ defect), should fail.
 ## Extra Credit Submission
 
 1. Fill in ReportTemplate.docx with the "memory-before.png" and
-   "memory-after.png" files generated above and exort to ReportTemplate.pdf.
+   "memory-after.png" files generated above and export to ReportTemplate.pdf.
 
 1. Commit and push all your code and your report to your GitHub classroom repository.
 
