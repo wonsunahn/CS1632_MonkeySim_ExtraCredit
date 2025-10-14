@@ -1,6 +1,6 @@
 # Extra Credit
 
-* DUE: March 19 (Tuesday), 2024 before start of class
+* DUE: November 10 (Wednesday), 2025 before start of class
 
 **GitHub Classroom Link:** TBD
 
