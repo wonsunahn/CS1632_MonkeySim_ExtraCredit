@@ -1,6 +1,6 @@
 # Extra Credit
 
-* DUE: November 10 (Wednesday), 2025 before start of class
+* DUE: March 24 (Tuesday), 2026 before start of class
 
 **GitHub Classroom Link:** TBD
 
@@ -12,10 +12,10 @@ necessarily equate to your GradeScope score.
 ## Description
 
 We are going to go back to the MonkeySim program we profiled on Exercise 4.
-The game is a simulation of the Collatz Conjecture
-(https://en.wikipedia.org/wiki/Collatz_conjecture).  The conjecture states that
-the game will eventually end (that is the first monkey will eventually get the
-banana).  
+The game is a simulation of the [Collatz
+Conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture).  The conjecture
+states that the game will eventually end (that is the first monkey will
+eventually get the banana).  
 
 Now it turns out that the MonkeySim does not end given certain arguments.  So
 have we disproved the conjecture, something that nobody was able to do since
